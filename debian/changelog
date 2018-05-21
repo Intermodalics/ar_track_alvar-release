@@ -1,0 +1,35 @@
+ros-melodic-ar-track-alvar-msgs (0.7.1-0stretch) stretch; urgency=high
+
+  * [maintenance] Remove unnecessary metapkg.
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 14 Jun 2017 07:00:00 -0000
+
+ros-melodic-ar-track-alvar-msgs (0.7.0-0stretch) stretch; urgency=high
+
+  * Consolidate ar_track_alvar* packages into a single repo (#120 <https://github.com/sniekum/ar_track_alvar/issues/120>)
+  * Contributors: Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Fri, 21 Apr 2017 07:00:00 -0000
+
+ros-melodic-ar-track-alvar-msgs (0.5.2-0stretch) stretch; urgency=high
+
+  * Add CI config. Update maintainer. #2 <https://github.com/sniekum/ar_track_alvar_msgs/issues/2>
+  * Contributors: Scott Niekum, Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Thu, 20 Apr 2017 07:00:00 -0000
+
+ros-melodic-ar-track-alvar-msgs (0.5.1-0stretch) stretch; urgency=high
+
+  * Release into Jade ROS
+  * Contributors: Isaac IY Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Sun, 12 Apr 2015 07:00:00 -0000
+
+ros-melodic-ar-track-alvar-msgs (0.5.0-0stretch) stretch; urgency=high
+
+  * migrate from ar_track_alvar repository
+  * Contributors: Jihoon Lee
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 25 Jun 2014 07:00:00 -0000
+
+
