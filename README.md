@@ -1,3 +1,28 @@
+## ar_track_alvar (melodic) - 0.7.1-0
+
+The packages in the `ar_track_alvar` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --ros-distro melodic --track melodic ar_track_alvar` on `Mon, 21 May 2018 10:16:11 -0000`
+
+These packages were released:
+- `ar_track_alvar`
+- `ar_track_alvar_msgs`
+
+Version of package(s) in repository `ar_track_alvar`:
+
+- upstream repository: https://github.com/ros-perception/ar_track_alvar
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.7.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.2`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## ar_track_alvar (lunar) - 0.7.1-0
 
 The packages in the `ar_track_alvar` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --rosdistro lunar --track lunar ar_track_alvar --edit` on `Wed, 14 Jun 2017 21:52:59 -0000`
