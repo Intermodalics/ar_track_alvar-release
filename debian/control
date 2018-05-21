@@ -1,0 +1,12 @@
+Source: ros-melodic-ar-track-alvar
+Section: misc
+Priority: extra
+Maintainer: Scott Niekum <sniekum@cs.umass.edu>
+Build-Depends: debhelper (>= 9.0.0), libtinyxml-dev, ros-melodic-ar-track-alvar-msgs, ros-melodic-catkin, ros-melodic-cmake-modules, ros-melodic-cv-bridge, ros-melodic-dynamic-reconfigure, ros-melodic-geometry-msgs, ros-melodic-image-transport, ros-melodic-message-generation, ros-melodic-pcl-conversions, ros-melodic-pcl-ros, ros-melodic-resource-retriever, ros-melodic-rosbag, ros-melodic-roscpp, ros-melodic-rospy, ros-melodic-rostest, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2, ros-melodic-visualization-msgs
+Homepage: http://ros.org/wiki/ar_track_alvar
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ar-track-alvar
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libtinyxml-dev, ros-melodic-ar-track-alvar-msgs, ros-melodic-cv-bridge, ros-melodic-dynamic-reconfigure, ros-melodic-geometry-msgs, ros-melodic-image-transport, ros-melodic-message-runtime, ros-melodic-pcl-conversions, ros-melodic-pcl-ros, ros-melodic-resource-retriever, ros-melodic-roscpp, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2, ros-melodic-visualization-msgs
+Description: This package is a ROS wrapper for Alvar, an open source AR tag tracking library.
