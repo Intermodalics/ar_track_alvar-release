@@ -1,0 +1,130 @@
+ros-melodic-ar-track-alvar (0.7.1-0bionic) bionic; urgency=high
+
+  * [maintenance] Remove unnecessary metapkg.
+  * [fix][build][CMakeLists] Prevent rosdep errors that only occur when running tests with catkin_make_isolated. See http://answers.ros.org/question/262558/buildfarm-missing-package-dependencies-pkg_namepackagexml/
+  * [test] Relax tf test criteria #39 <https://github.com/ros-perception/ar_track_alvar/pull/39>
+  * Contributors: Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 14 Jun 2017 07:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.7.0-0bionic) bionic; urgency=high
+
+  * Consolidate ar_track_alvar* packages into a single repo (#120 <https://github.com/sniekum/ar_track_alvar/issues/120>)
+  * Contributors: Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Fri, 21 Apr 2017 07:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.6.3-0bionic) bionic; urgency=high
+
+  * [fix] Marker no longer recognized, for IndividualMarkersNoKinect #93 <https://github.com/sniekum/ar_track_alvar/issues/93>
+  * [capability] Add param to derive camera frame from pointcloud message frame (#111 <https://github.com/sniekum/ar_track_alvar/issues/111>)
+  * [capability ] individual marker nodes: replace command line args with ros parameters (#99 <https://github.com/sniekum/ar_track_alvar/issues/99>)
+  * [maintenance] Add system test using .bag. (#106 <https://github.com/sniekum/ar_track_alvar/issues/106>)
+  * Contributors: Hans-Joachim Krauch, Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Thu, 09 Feb 2017 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.6.2-0bionic) bionic; urgency=high
+
+  * [fix] Marker no longer recognized #93 <https://github.com/sniekum/ar_track_alvar/issues/93>
+  * [fix] add install rule for bundles folder; fixes #88 <https://github.com/sniekum/ar_track_alvar/issues/88>
+  * [fix] Shutdown camera info sub after called
+  * [enhancement] add mark_resolution and mark_marge as input option
+  * [enhancement] individualMarkers: replace cout with ROS_DEBUG_STREAM (#101 <https://github.com/sniekum/ar_track_alvar/issues/101>)
+  * Contributors: Alex Reimann, Hans-Joachim Krauch, Isaac I.Y. Saito, TORK Developer 534
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Tue, 07 Feb 2017 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.6.1-0bionic) bionic; urgency=high
+
+  * New parameter -array to create an array of markers #85 <https://github.com/sniekum/ar_track_alvar/issues/85> from 130s/kinetic/add_60
+  * Fix build for Kinetic by adding missing dependencies on gencfg #84 <https://github.com/sniekum/ar_track_alvar/issues/84> from 130s/kinetic/fix_buildfarm
+  * [sys] Add a maintainer to receive notification from ros buildfarm.
+  * Contributors: Jackie Kay, Mehdi, Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 08 Jun 2016 07:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.6.0-0bionic) bionic; urgency=high
+
+  * Made compatible to ROS-Kinetic-Kame #80 <https://github.com/sniekum/ar_track_alvar/issues/80>
+  * [Travis CI] Add ROS Kinetic support. Add Prerelease Test on Travis #79 <https://github.com/sniekum/ar_track_alvar/issues/79>
+  * Contributors: Sepehr MohaimenianPour, Isaac I.Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 01 Jun 2016 07:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.5.3-0bionic) bionic; urgency=high
+
+  * [feat] New bool-Topic to enable/disable the marker detection (#70 <https://github.com/sniekum/ar_track_alvar/issues/70>)
+  * [feat] added public way to set intrinsicCalibration for Camera class
+  * [fix] not publishing marker that are facing in the same direction as the camera.
+  * [sys] removed duplicate code for image subscription
+  * Contributors: Nikolas Engelhard, Scott Niekum
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Tue, 02 Feb 2016 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.5.2-0bionic) bionic; urgency=high
+
+  * [fix] Move tf include from header to cpp files, fixes #66 <https://github.com/sniekum/ar_track_alvar/issues/66>
+    The header currently prevents us from re-using the library as a given library (because it pulls in tf2 which causes trouble). The include has been moved to the individual nodes which actually use a TransformBroadcaster.
+  * [fix] proper virtual destruction #63 <https://github.com/sniekum/ar_track_alvar/issues/63>.
+  * improve license information in package.xml (#58 <https://github.com/sniekum/ar_track_alvar/issues/58>)
+  * Added time stamp to header (#57 <https://github.com/sniekum/ar_track_alvar/issues/57>)
+    Previously, each pose had a timestamp, but the whole message did not. By including the timestamp for the whole message, it is now possible to use the results of the ar_pose_marker topic with other messages using message_filters::Synchronizer.
+  * Contributors: Alex Henning, Bener Suay, Lukas Bulwahn, Scott Niekum, Tim Niemueller, Isaac I. Y. Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Fri, 27 Nov 2015 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.5.1-0bionic) bionic; urgency=high
+
+  * Remove meta pkg; ar_track_alvar is 'unary stack' so no need for the meta pkg.
+  * Contributors: Scott Niekum, Isaac IY Saito
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Tue, 14 Apr 2015 07:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.5.0-0bionic) bionic; urgency=high
+
+  * move README to root directory
+  * Merge remote-tracking branch 'origin/hydro-devel' into indigo-devel
+  * ar_track_alvar package uses ar_track_alvar_msgs
+  * restructuring packages. Separate out the message package.
+  * Contributors: Jihoon Lee
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 25 Jun 2014 07:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.4.1-0bionic) bionic; urgency=high
+
+
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Thu, 28 Nov 2013 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.3.3-0bionic) bionic; urgency=high
+
+
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Fri, 22 Feb 2013 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.3.2-0bionic) bionic; urgency=high
+
+
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Mon, 18 Feb 2013 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.3.1-0bionic) bionic; urgency=high
+
+
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Thu, 14 Feb 2013 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.3.0-0bionic) bionic; urgency=high
+
+
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Thu, 17 Jan 2013 08:00:00 -0000
+
+ros-melodic-ar-track-alvar (0.2.0-0bionic) bionic; urgency=high
+
+
+
+ -- Scott Niekum <sniekum@cs.umass.edu>  Wed, 08 Aug 2012 07:00:00 -0000
+
+
